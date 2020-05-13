@@ -1,74 +1,121 @@
  1. What is Semantic HTML? 
-    
+    Semantic HTML adds meaning to your code.
+
  2. What is HTML used for? 
+    HTML is the base of a website.
 
  3. What is an attribute and where do we put it? 
+    An attribute adds more data to the code. We put it after an element.
 
  4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag highlights the main title of the web page. It should only be used once.
 
  5. Name two tags that have required attributes
+    The anchor tag and image tag
 
  6. What do we put in the head of our HTML document? 
+    We put the HTML tag at the head of our document.
 
  7. What is an id? 
-     
+     An id specifies a specific element on the web page.
+
  8. What elements can I add an id to? 
+    Ids can be added to paragraphs, divs, spans, and h1-6 elements.
 
  9. How many times can I use the same id on a page? 
+    An id should only be used once per element.
 
  10. What is a class? 
+    A class specifies on or more elements on a web page.
 
  11. What elements can I add a class to? 
-    
+    Classes can be added to paragraphs, divs, spans, and h1-6 elements.
+
  12. How many times can I use the same class on a page? 
+    A class can be used as many times as you want per element.
 
  13. How do I get my link to open in a new tab?
+    To get a link to open in a new tab use the anchor and href attribute add your link and then target blank and it will open the link in a new tab.
 
  14. What is the alt attribute in the image tag used for? 
+    The alt attribute is used to provide alternate information for an image if the user cannot view it for some reason.
 
  15. How do I reference an id?
+    You use the # symbol and the {}.
 
  16. What is the difference between a section and a div
+    A section tag is Semantic HTMLand a div is not.
 
  17. What is CSS used for? 
+    CSS is used to style a web page.
 
  18. How to we select an element? Example - every h2 on the page
+    You do h2{} and you add whatever style you want to the inside of the {}.
 
  19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    Id is more important than class. When you want to style something after a class you can use the id even if it comes after the class. With class you can select multiple items within a certain class(ex. Paragraph class) and it will add css to all elements in that class.
 
  20. How do we select classes in CSS?
+    .class
 
  21. How do we select a p element with a single class of “human””?
+    .human
 
  22. What is a parent child selector? When would this be useful? 
+    The parent child selector gives the relation between two elements. When you want to select the direct child of an element (ex body > p {color:green;} every green paragraph is the direct child of the body.).
 
  23. How do you select all links within a div with the class of sidebar?
+    You use a : link[
+        background-color: color;
+    ]
 
  24. What is a pseudo selector?
+     A selector that selects elements that are in a specific state.
 
  25. What do we use the change the spacing between lines?
+    We use the line-height property in css to change the spacing between the lines.
 
  26. What do we use to change the spacing between letters?
+    We use the letter-spacing property in css to change the spacing between the letters.
 
  27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    To change everything to CAPITALS we use the uppercase property. To make everything lower case we use the lowercase property. To Capitalize the first letter of each word we use the capitalize property.
 
  28. How do I add a 1px border around my div that is dotted and black?
+    div{
+        border: 1px dotted black;
+    }
 
  29. How do I select everything on the page? 
+    *{}
 
  30. How do I write a comment in CSS?
+/* comment goes here */
 
  31. How do I find out what file I am in, when I am using the command line? 
+    Use the command pwd to show you what file you're in, this can be done at anytime.
 
  32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls lists all the files/folders. ls -a lists all files/folders including hidden files/folders.
 
  33. How do I remove a file via the command line? Why do I have to be careful with this?
+    rm <filename> . The command line doesn't ask if you are sure about deleting a file and if you delete a file using the command line you can never get it back.
 
  34. Why should I use version control? 
+    It saves every version of your work so you or other developers can go back to a specific place in your code to see what you have done.
 
  35. How often should I commit to github?
+    Whenever you finish a section, or how ever often you would like.
 
  36. What is the command we would use to push our repo up to github? 
+    git push <remote> <branch>
 
  37. Walk me through Lambda's git flow. 
-    
+    Fork the repo to make your own copy
+    Add your TL as a collaborator
+    Clone the repo
+    Create a branch using your firstname-lastname
+    Submit pull request into new branch
+        >Use your own fork to compare as the base(compare across forks)
+        >Add TL as a reviewer on the pull request
+    TL will count the HW as done by merging the HW back into the master"STUDENT FORK"
